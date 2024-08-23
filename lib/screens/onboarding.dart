@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_test/widgets/c_button.dart';
 import 'package:news_test/widgets/carousel.dart';
 import 'package:news_test/widgets/dots.dart';
 
@@ -77,14 +78,10 @@ class _OnboardingState extends State<Onboarding> {
             Row(
               children: [
                 Expanded(
-                  child: ElevatedButton(
-                      onPressed: () {},
-                      style: ButtonStyle(
-                          foregroundColor:
-                              WidgetStateProperty.all(Colors.white),
-                          backgroundColor:
-                              WidgetStateProperty.all(Color(0xFF475AD7))),
-                      child: Text('Get Started')),
+                  child: CButton(
+                    text: 'Get Started',
+                    onPressed: () {},
+                  ),
                 ),
               ],
             ),

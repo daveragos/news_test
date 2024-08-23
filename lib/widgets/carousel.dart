@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:news_test/utils/konstants.dart';
+import 'package:news_test/widgets/text_pair.dart';
 
 class Carousel extends StatelessWidget {
   const Carousel(
@@ -30,23 +32,27 @@ class Carousel extends StatelessWidget {
           ),
         ),
         SizedBox(height: 20),
-        Text(
-          title,
-          style: const TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: Text(
-            desc,
-            style: TextStyle(
-              color: Color(0xFF7C82A1),
-              fontSize: 16,
+        Column(
+          children: [
+            Text(
+              title,
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
-        ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Text(
+                desc,
+                style: TextStyle(
+                  color: Konstants().kColor,
+                  fontSize: 16,
+                ),
+              ),
+            ),
+          ],
+        )
       ],
     );
   }
