@@ -7,6 +7,7 @@ environment:
   sdk: ^3.5.1
 
 dependencies:
+  fluentui_system_icons: ^1.1.254
   flutter:
     sdk: flutter
   go_router: ^14.2.6

@@ -10,6 +10,7 @@ class cTextField extends StatelessWidget {
       required this.hint});
 
   final TextEditingController passwordText;
+  //FIXME: add "THE" icon
   final IconData icon;
   final bool obscure;
   final String hint;
@@ -25,17 +26,18 @@ class cTextField extends StatelessWidget {
           filled: true,
           fillColor: Color(0xFFF9FCFE),
           hintText: hint,
-          hintStyle: TextStyle(color: Konstants().kColor),
+          hintStyle: TextStyle(color: Konstants().kGrey),
           prefixIcon: Icon(
             icon,
-            color: Konstants().kColor,
+            color: Konstants().kGrey,
           ),
           suffixIcon: obscure
               ? IconButton(
+                  //FIXME: add onPressed
                   onPressed: () {},
                   icon: Icon(
                     Icons.remove_red_eye_outlined,
-                    color: Konstants().kColor,
+                    color: Konstants().kGrey,
                   ))
               : SizedBox(),
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(10))),

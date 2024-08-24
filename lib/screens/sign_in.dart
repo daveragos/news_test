@@ -60,7 +60,7 @@ class _SignInState extends State<SignIn> {
                             onPressed: () {},
                             child: Text(
                               'Forgot password',
-                              style: TextStyle(color: Konstants().kColor),
+                              style: TextStyle(color: Konstants().kGrey),
                             ),
                           ),
                         ],
@@ -70,9 +70,12 @@ class _SignInState extends State<SignIn> {
                       Row(
                         children: [
                           Expanded(
-                            child: CButton(
+                            child: KElevatedButton(
                               text: 'Sign In',
                               onPressed: () {},
+                              fg: Colors.white,
+                              bg: Konstants().kPurple,
+                              borderColor: Konstants().kPurple,
                             ),
                           ),
                         ],
@@ -87,7 +90,7 @@ class _SignInState extends State<SignIn> {
                           const SizedBox(width: 5),
                           Text(
                             'or',
-                            style: TextStyle(color: Konstants().kColor),
+                            style: TextStyle(color: Konstants().kGrey),
                           ),
                           const SizedBox(width: 5),
                           const Expanded(
@@ -131,7 +134,7 @@ class _SignInState extends State<SignIn> {
                 children: [
                   Text(
                     'Don\'t have an account?',
-                    style: TextStyle(color: Konstants().kColor),
+                    style: TextStyle(color: Konstants().kGrey),
                   ),
                   TextButton(
                     onPressed: () {},

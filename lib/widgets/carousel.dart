@@ -46,7 +46,7 @@ class Carousel extends StatelessWidget {
               child: Text(
                 desc,
                 style: TextStyle(
-                  color: Konstants().kColor,
+                  color: Konstants().kGrey,
                   fontSize: 16,
                 ),
               ),

@@ -30,7 +30,7 @@ class TextPair extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                width: 20,
+                width: 10,
               ),
               extra ?? SizedBox(),
             ],
@@ -38,7 +38,7 @@ class TextPair extends StatelessWidget {
           Text(
             desc,
             style: TextStyle(
-              color: Konstants().kColor,
+              color: Konstants().kGrey,
               fontSize: 16,
             ),
           ),

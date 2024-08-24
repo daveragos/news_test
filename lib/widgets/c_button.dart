@@ -1,31 +1,34 @@
 import 'package:flutter/material.dart';
 
-class CButton extends StatelessWidget {
-  CButton({
+class KElevatedButton extends StatelessWidget {
+  KElevatedButton({
     super.key,
     required this.text,
     this.onPressed,
+    required this.bg,
+    required this.borderColor,
+    required this.fg,
   });
   final String text;
   final VoidCallback? onPressed;
+  final Color bg;
+  final Color fg;
+  final Color borderColor;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 50,
-      child: ElevatedButton(
-          onPressed: onPressed ?? () {},
-          style: ButtonStyle(
-            shape: WidgetStateProperty.all<RoundedRectangleBorder>(
-                RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                    side: BorderSide(color: Color(0xFF475AD7)))),
-            foregroundColor: WidgetStateProperty.all(Colors.white),
-            backgroundColor: WidgetStateProperty.all(
-              Color(0xFF475AD7),
-            ),
-          ),
-          child: Text(text)),
-    );
+    return ElevatedButton(
+        onPressed: /* onPressed ?? */ () {},
+        style: ButtonStyle(
+          shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+              RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                  side: BorderSide(color: borderColor /*Color(0xFF475AD7)*/))),
+          foregroundColor: WidgetStateProperty.all(fg),
+          backgroundColor: WidgetStateProperty.all(bg
+              // Color(0xFF475AD7),
+              ),
+        ),
+        child: Text(text));
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_test/utils/konstants.dart';
 import 'package:news_test/widgets/c_button.dart';
 import 'package:news_test/widgets/carousel.dart';
 import 'package:news_test/widgets/dots.dart';
@@ -78,9 +79,12 @@ class _OnboardingState extends State<Onboarding> {
             Row(
               children: [
                 Expanded(
-                  child: CButton(
+                  child: KElevatedButton(
                     text: 'Get Started',
                     onPressed: () {},
+                    bg: Konstants().kPurple,
+                    fg: Colors.white,
+                    borderColor: Konstants().kPurple,
                   ),
                 ),
               ],
