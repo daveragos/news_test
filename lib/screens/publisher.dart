@@ -171,14 +171,11 @@ class _PublisherState extends State<Publisher> {
                   height: 10,
                 ),
                 //search
-                SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  child: KTextField(
-                      textController: searchText,
-                      icon: Icons.search,
-                      obscure: false,
-                      hint: 'Search "News"'),
-                ),
+                KTextField(
+                    textController: searchText,
+                    icon: Icons.search,
+                    obscure: false,
+                    hint: 'Search "News"'),
                 SizedBox(
                   height: 10,
                 ),

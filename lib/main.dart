@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_test/screens/discover.dart';
 import 'package:news_test/screens/home.dart';
 import 'package:news_test/screens/publisher.dart';
 
@@ -13,7 +14,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Publisher(),
+      home: Discover(),
     );
   }
 }
