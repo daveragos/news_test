@@ -38,16 +38,16 @@ class _SignInState extends State<SignIn> {
                       ),
                       const SizedBox(height: 40),
                       // EmailField
-                      cTextField(
-                        passwordText: emailText,
+                      KTextField(
+                        textController: emailText,
                         icon: Icons.email_outlined,
                         obscure: false,
                         hint: 'Email',
                       ),
                       const SizedBox(height: 20),
                       // PasswordField
-                      cTextField(
-                        passwordText: passwordText,
+                      KTextField(
+                        textController: passwordText,
                         hint: 'Password',
                         icon: Icons.lock_outline,
                         obscure: true,

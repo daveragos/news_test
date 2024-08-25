@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:news_test/utils/konstants.dart';
 
-class cTextField extends StatelessWidget {
-  const cTextField(
+class KTextField extends StatelessWidget {
+  const KTextField(
       {super.key,
-      required this.passwordText,
+      required this.textController,
       required this.icon,
       required this.obscure,
       required this.hint});
 
-  final TextEditingController passwordText;
+  final TextEditingController textController;
   //FIXME: add "THE" icon
   final IconData icon;
   final bool obscure;
@@ -18,7 +18,7 @@ class cTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      controller: passwordText,
+      controller: textController,
       obscureText: obscure,
       decoration: InputDecoration(
           focusedBorder: InputBorder.none,

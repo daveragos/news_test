@@ -7,16 +7,20 @@ class TextPair extends StatelessWidget {
     required this.title,
     required this.desc,
     this.extra,
+    this.titleSize = 20,
+    this.descSize = 16,
   });
 
   final String title;
   final String desc;
   Widget? extra;
+  final double titleSize;
+  final double descSize;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: EdgeInsets.all(12.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -24,8 +28,8 @@ class TextPair extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: const TextStyle(
-                  fontSize: 20,
+                style: TextStyle(
+                  fontSize: titleSize,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -39,7 +43,7 @@ class TextPair extends StatelessWidget {
             desc,
             style: TextStyle(
               color: Konstants().kGrey,
-              fontSize: 16,
+              fontSize: descSize,
             ),
           ),
         ],
