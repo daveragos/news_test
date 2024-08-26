@@ -4,7 +4,38 @@ class Konstants {
   var kGrey = Color(0xFF7C82A1);
   Color kPurple = Color(0xFF475AD7);
   Color kContainerColor = Color(0xFFF9FCFE);
-
+  final selectedFilters = <String>[
+    'Politics',
+    'Economy',
+    'Lifestyle',
+    'Business',
+  ];
+  final category = <String>[
+    'Politics',
+    'Economy',
+    'Lifestyle',
+    'Business',
+    'Entertainment',
+    'Fashion',
+    'Food',
+    'Arts',
+    'Travel',
+    'Health',
+    'Science',
+    'Sports',
+    'World',
+    'Technology'
+  ];
+  final location = <String>[
+    'Africa',
+    'Asia',
+    'Europe',
+    'North America',
+    'South America',
+    'Oceania',
+    'Antarctica',
+    'Global'
+  ];
   List<Map<String, String>> newsContent = [
     {
       'image': 'assets/images/chess.png',

@@ -22,7 +22,7 @@ class KElevatedButton extends StatelessWidget {
     return SizedBox(
       height: height,
       child: ElevatedButton(
-          onPressed: /* onPressed ?? */ () {},
+          onPressed: onPressed,
           style: ButtonStyle(
             shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
